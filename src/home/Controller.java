@@ -93,12 +93,14 @@ public class Controller implements Initializable {
 
     public void handleClicks(ActionEvent actionEvent) throws IOException {
         if (actionEvent.getSource() == btnCustomers) {
-            pnlCustomer.setStyle("-fx-background-color : #1620A1");
+            pnlCustomer.setStyle("-fx-background-color : #02030A");
             pnlCustomer.toFront();
+            pnlCustomer.setVisible(true);
         }
         if (actionEvent.getSource() == btnMenus) {
-            pnlMenus.setStyle("-fx-background-color : #53639F");
+            pnlMenus.setStyle("-fx-background-color : #02030A");
             pnlMenus.toFront();
+            pnlMenus.setVisible(true);
         }
         if (actionEvent.getSource() == btnOverview) {
             pnlOverview.setStyle("-fx-background-color : #02030A");
@@ -106,8 +108,9 @@ public class Controller implements Initializable {
         }
         if(actionEvent.getSource()==btnOrders)
         {
-            pnlOrders.setStyle("-fx-background-color : #464F67");
+            pnlOrders.setStyle("-fx-background-color : #02030A");
             pnlOrders.toFront();
+            pnlOrders.setVisible(true);
         }
         if(actionEvent.getSource()==btnSignout)
         {
