@@ -27,7 +27,7 @@
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btnSignin" layoutX="515.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleClicks" text="Button" />
+                  <Button fx:id="btnSignin" layoutX="511.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@/home/style.css" text="Sign in" textFill="WHITE" />
                </children>
             </Pane>
          </children>
@@ -39,6 +39,17 @@
                   <Image url="@../images/Web_Banner__2_.jpg" />
                </image>
             </ImageView>
+            <Label layoutX="142.0" layoutY="150.0" prefHeight="169.0" prefWidth="322.0" text="Best Project in the" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="184.0" layoutY="276.0" text="WORLD" textFill="WHITE">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="560.0" text="Designed By Saud Alhawas" textFill="WHITE" />
          </children></AnchorPane>
    </children>
 </AnchorPane>
