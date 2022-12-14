@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -87,7 +88,6 @@ public class Controller implements Initializable {
                 e.printStackTrace();
             }
         }
-
     }
 
 
@@ -113,32 +113,15 @@ public class Controller implements Initializable {
         {
             pnlSignout.setStyle("-fx-background-color : #02030A");
             pnlSignout.toFront();
+            pnlSignout.setVisible(true);
         }
         if(actionEvent.getSource()==btnSignin)
         {
             Stage stage = (Stage) btnSignin.getScene().getWindow();
             stage.close();
-            //-----------
-            Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-            primaryStage.setScene(new Scene(root));
-
-            //drag it here
-            root.setOnMousePressed(event -> {
-                x = event.getSceneX();
-                y = event.getSceneY();
-            });
-            root.setOnMouseDragged(event -> {
-
-                primaryStage.setX(event.getScreenX() - x);
-                primaryStage.setY(event.getScreenY() - y);
-
-            });
-            //set stage borderless
-            primaryStage.initStyle(StageStyle.UNDECORATED);
-            primaryStage.show();
-            //
-
+            //-------
+            Main main = new Main();
+            main.login();
         }
     }
 }

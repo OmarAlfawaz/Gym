@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.IOException;
+
 public class Main extends Application {
     private double x, y;
 
@@ -29,6 +31,28 @@ public class Main extends Application {
 
         });
         primaryStage.show();
+    }
+    public void login() throws IOException {
+        //-----------
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+        primaryStage.setScene(new Scene(root));
+
+        //drag it here
+        root.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+
+        });
+        //set stage borderless
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.show();
+        //
     }
 
 
