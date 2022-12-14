@@ -44,16 +44,22 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This app lets people that regularly go to the gym track their exercise results in every session, allowing them to review their pervious results, so that with each new session, they can use the results of the previous session as the goal to beat (or match) for the current session. Over time the person going to the gym will be able to see how they have improved.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+## App Usage Walkthrough
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+To start off, enter in your email address - all recorded information will be associated with your email address, so you can log in from any device and pickup where you left off.
 
-Use the `BLANK_README.md` to get started.
+Then on the 'Select your training session for today' select the type of gym weight lifting training session you would like to complete today. Choices are 'Chest', 'Back', 'Arms' and 'Legs'.
+
+Once you've selected a training session, go ahead and click the 'Add Exercise' button to add the exercise you're about to do at the gym. For example, if you're doing a 'Chest' session at the gym, you might start off with 'Bench Press' as your first exercise. Go ahead and add 'Bench Press'.
+
+Once you've added your exercise, do you first set at your required weight. When you're done doing your set, click on 'Add Set' in the app to record the weight and reps for that set. If you made a typo, you can click the edit button to the right of the recorded set. Or if you simply don't want to keep that set, just click the delete button to the left of the recorded set.
+
+When you're ready to move on to the next exercise, just add a new exercise and start recording the sets for it.
+
+When you come back to the gym the following week to do the same training session, the Gym Tracker App will automatically find the exercises you did last week and pre-populate them for you, so you don't have to type them in again. All you need to do is just add a set as per normal to the appropriate exercise. Addiionally, the Gym Tracker App will tell you what your best set was during the last session for each of the given exercises, so you know what to set your goal as for this session.
+Use the `Link` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,28 +86,12 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Java 19
   ```sh
-  npm install npm@latest -g
+  Java.com
   ```
 
-### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,10 +113,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [x] Add Changelog
 - [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Add Server that can host the info
+- [ ] Add "Share" button to easily share stats 
 - [ ] Multi-language Support
-    - [ ] Chinese
+    - [ ] Arabic
     - [ ] Spanish
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
@@ -134,22 +124,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -165,29 +139,14 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Saud Alhawas  - s202014840@kfupm.edu.sa
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Project Link: [https://github.com/OmarAlfawaz/Gym](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 
 
 
