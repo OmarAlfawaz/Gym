@@ -12,7 +12,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         primaryStage.setScene(new Scene(root));
         //set stage borderless
         primaryStage.initStyle(StageStyle.UNDECORATED);
@@ -30,6 +30,8 @@ public class Main extends Application {
         });
         primaryStage.show();
     }
+
+
 
 
     public static void main(String[] args) {
