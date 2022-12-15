@@ -130,6 +130,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Saud Alhawas  - s202014840@kfupm.edu.sa
+Omar Alfawaz  - s202018400@kfupm.edu.sa
 
 Project Link: [https://github.com/OmarAlfawaz/Gym](https://github.com/your_username/repo_name)
 
