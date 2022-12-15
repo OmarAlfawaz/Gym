@@ -7,7 +7,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -19,8 +21,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicReference;
 
+import static javax.swing.text.html.FormSubmitEvent.MethodType.POST;
+
 public class Controller implements Initializable {
 
+    public TextField name;
+    public TextField passWord;
     @FXML
     private VBox pnItems;
     @FXML
@@ -117,14 +123,24 @@ public class Controller implements Initializable {
             pnlSignout.setStyle("-fx-background-color : #02030A");
             pnlSignout.toFront();
             pnlSignout.setVisible(true);
+
         }
         if(actionEvent.getSource()==btnSignin)
         {
             Stage stage = (Stage) btnSignin.getScene().getWindow();
-            stage.close();
+            //we will create a loop to check the API
+            if (name.getText().equals("Omar")&&passWord.getText().equals("1234")){
+                stage.close();
+                //After we close the stage we go to main
+                Main main = new Main();
+                main.login();
+            }
+            else{
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setContentText("Invalid Username/passWord");
+                alert.showAndWait();
+            }
             //-------
-            Main main = new Main();
-            main.login();
         }
     }
 }
