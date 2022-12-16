@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
@@ -16,17 +17,22 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import javax.swing.*;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicReference;
 
 import static javax.swing.text.html.FormSubmitEvent.MethodType.POST;
 
 public class Controller implements Initializable {
-
-    public TextField name;
     public TextField passWord;
+    public Label nameUp;
+    public TextField username;
     @FXML
     private VBox pnItems;
     @FXML
@@ -71,7 +77,6 @@ public class Controller implements Initializable {
     private double x, y;
 
 
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Node[] nodes = new Node[10];
@@ -112,35 +117,107 @@ public class Controller implements Initializable {
             pnlOverview.setStyle("-fx-background-color : #02030A");
             pnlOverview.toFront();
         }
-        if(actionEvent.getSource()==btnOrders)
-        {
+        if (actionEvent.getSource() == btnOrders) {
             pnlOrders.setStyle("-fx-background-color : #02030A");
             pnlOrders.toFront();
             pnlOrders.setVisible(true);
         }
-        if(actionEvent.getSource()==btnSignout)
-        {
+        if (actionEvent.getSource() == btnSignout) {
             pnlSignout.setStyle("-fx-background-color : #02030A");
             pnlSignout.toFront();
             pnlSignout.setVisible(true);
 
         }
-        if(actionEvent.getSource()==btnSignin)
-        {
+        if (actionEvent.getSource() == btnSignin) {
             Stage stage = (Stage) btnSignin.getScene().getWindow();
             //we will create a loop to check the API
-            if (name.getText().equals("Omar")&&passWord.getText().equals("1234")){
-                stage.close();
-                //After we close the stage we go to main
-                Main main = new Main();
-                main.login();
+            System.out.println(username.getText());
+            if (username.getText().equals("") || passWord.getText().equals("")) {
+                //this.LabelSignIn.setText("Please fill in all the fields");
+            } else {
+                String name = username.getText();
+                String password = passWord.getText();
+                String type = "";
+                String path = "https://us-central1-swe206-221.cloudfunctions.net/app/SignIn?teamKey=51135203&username="
+                        + URLEncoder.encode(name, "UTF-8") + "&password=" + URLEncoder.encode(password, "UTF-8");
+                URL url = new URL(path);
+                HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                con.setRequestMethod("GET");
+                int status = con.getResponseCode();
+                BufferedReader response = new BufferedReader(new InputStreamReader((con.getInputStream())));
+                System.out.println(status);
+                type = response.readLine();
+                System.out.println(type);
+                if (status == 200) {
+                    if (type.equals("trainee")) {
+                        Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
+                        stage.close();
+                        //After we close the stage we go to main
+                        Main main = new Main();
+                        main.login();
+                    } else if (type.equals("trainer")) {
+                        Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
+                        stage.close();
+
+                        //After we close the stage we go to main
+                        Main main = new Main();
+                        main.login();
+                    }
+                } else {
+                    // this.LabelSignIn.setText("Wrong name or password");
+                }
+
+            }
+        }
+        /*void SignUpUserClick (MouseEvent event) throws IOException, URISyntaxException, InterruptedException {
+            if (UsernameContent2.getText().equals("") || PasswordContent2.getText().equals("")
+                    || (!TraineeSelect.isSelected() && !TrainerSelect.isSelected())) {
+                this.LabelSignUp.setText("Please fill in all the fields");
+            } else {
+                String username = UsernameContent2.getText();
+                String password = PasswordContent2.getText();
+                String type = "";
+                if (TraineeSelect.isSelected()) {
+                    type = "trainee";
+                } else if (TrainerSelect.isSelected()) {
+                    type = "trainer";
+                }
+                var uri = new URI("https://us-central1-swe206-221.cloudfunctions.net/app/SignUp?teamKey=40495102");
+                var message = """
+                        {
+                            "username": "%s",
+                            "password": "%s",
+                            "type": "%s"}
+                        """;
+                message = String.format(message, username, password, type);
+
+                var client = HttpClient.newHttpClient();
+                var request = HttpRequest.newBuilder(uri).POST(BodyPublishers.ofString(message))
+                        .header("Content-type", "application/json").build();
+                var response = client.send(request, BodyHandlers.discarding());
+                if (response.statusCode() == 201) {
+                    Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
+                } else {
+                    this.LabelSignUp.setText("Username already exists");
+                }
+            }
+        }
+
+
             }
             else{
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setContentText("Invalid Username/passWord");
                 alert.showAndWait();
             }
-            //-------
-        }
+
+            */
+        //-------
+
     }
 }
+

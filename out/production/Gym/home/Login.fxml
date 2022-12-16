@@ -20,7 +20,7 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="name" layoutX="445.0" layoutY="206.0" prefHeight="26.0" prefWidth="208.0" />
+                  <TextField fx:id="username" layoutX="445.0" layoutY="206.0" prefHeight="26.0" prefWidth="208.0" />
                   <TextField fx:id="passWord" layoutX="445.0" layoutY="262.0" prefHeight="26.0" prefWidth="208.0" />
                   <Label layoutX="499.0" layoutY="136.0" text="Login" textFill="WHITE">
                      <font>

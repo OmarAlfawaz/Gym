@@ -26,7 +26,7 @@
          </VBox.margin>
          <Image url="@../images/jimmy-fallon.png" />
       </ImageView>
-      <Label text="Mr.tomato KFupm" textFill="#e7e5e5">
+      <Label text="Omar" textFill="#e7e5e5">
          <VBox.margin>
             <Insets bottom="20.0" />
          </VBox.margin>
