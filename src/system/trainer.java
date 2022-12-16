@@ -15,7 +15,7 @@ public class trainer {
         this.weight = weight;
     }
 
-    public void addtrainee(trainee s){
+    public void addtrainee(system.trainee s){
         enlistedTrainee.addFirst(s);
     }
 
