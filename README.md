@@ -106,7 +106,7 @@ This is an example of how to list things you need to use the software and how to
 - [ ] Add Server that can host the info
 - [ ] Add "Share" button to easily share stats 
 - [ ] Multi-language Support
-    - [ ] Arabic
+    - [x] Arabic
     - [ ] Spanish
     - [ ] hindu
 
@@ -134,7 +134,7 @@ Saud Alhawas  - s202014840@kfupm.edu.sa
 
 Omar Alfawaz  - s202018400@kfupm.edu.sa
 
-Osamah Alomari - s202065500@kfupm.edu.sa
+Osamah Alomari - s202065500@kfupm.edu.sa 
 
 Project Link: [https://github.com/OmarAlfawaz/Gym](https://github.com/your_username/repo_name)
 
