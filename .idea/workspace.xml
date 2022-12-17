@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="689e5c2c-0f3d-4326-99ca-770da383b48e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/home/Acoount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/Infograph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gym.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gym.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/libraries/JavaFX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/runConfigurations/Main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/Gym.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Item.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Sign.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/Web_Banner__2_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Box_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Home_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Meanpath_64px_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Open_Envelope_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Person_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Search_52px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Sign_Out_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Slider__32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Xbox_Menu_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/jimmy-fallon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/imgs/sc.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/imgs/sc2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/Home.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/Item.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/Login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/Web_Banner__2_.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Box_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Home_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Meanpath_64px_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Open_Envelope_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Person_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Search_52px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Sign_Out_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Slider__32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Xbox_Menu_32px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/jimmy-fallon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/system/trainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Item.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Signup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/progress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/trainee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/system/trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/trainer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2J3S8MobTet4f5gFxl3JhKNqSLC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/saudabdulaziz/Documents/Gym/src/home",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/home" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home.Main" />
+      <module name="Gym" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/Downloads/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="home.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="689e5c2c-0f3d-4326-99ca-770da383b48e" name="Changes" comment="" />
+      <created>1671305112918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671305112918</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
