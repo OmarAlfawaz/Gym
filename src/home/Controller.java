@@ -226,6 +226,10 @@ public class Controller implements Initializable {
         //-------
 
     }
+        if (actionEvent.getSource() ==btnSignup ){
+            Main main =new Main();
+            main.Signup();
+        }
 }
 }
 
