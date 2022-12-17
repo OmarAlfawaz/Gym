@@ -108,6 +108,7 @@ This is an example of how to list things you need to use the software and how to
 - [ ] Multi-language Support
     - [ ] Arabic
     - [ ] Spanish
+    - [ ] hindu
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
