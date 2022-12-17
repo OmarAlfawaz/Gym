@@ -20,14 +20,16 @@
          <children>
             <Pane prefHeight="200.0" prefWidth="200.0">
                <children>
-                  <TextField fx:id="username" layoutX="445.0" layoutY="206.0" prefHeight="26.0" prefWidth="208.0" />
-                  <TextField fx:id="passWord" layoutX="445.0" layoutY="262.0" prefHeight="26.0" prefWidth="208.0" />
+                  <TextField fx:id="username" layoutX="404.0" layoutY="206.0" prefHeight="26.0" prefWidth="274.0" promptText="Username" />
+                  <TextField fx:id="passWord" layoutX="405.0" layoutY="262.0" prefHeight="26.0" prefWidth="274.0" promptText="Password" />
                   <Label layoutX="499.0" layoutY="136.0" text="Login" textFill="WHITE">
                      <font>
                         <Font size="36.0" />
                      </font>
                   </Label>
-                  <Button fx:id="btnSignin" layoutX="511.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@/home/style.css" text="Sign in" textFill="WHITE" />
+                  <Button fx:id="btnSignin" layoutX="595.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@/home/style.css" text="Sign in" textFill="WHITE" />
+                  <Button fx:id="btnSignin1" layoutX="437.0" layoutY="480.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="28.0" prefWidth="208.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: #2A73FF; -fx-background-radius: 20;" stylesheets="@/home/style.css" text="Don't have an account? Sign up" textFill="WHITE" />
+                  <Label layoutX="405.0" layoutY="323.0" text="Forget Your Password?" textFill="#2a73ff" underline="true" />
                </children>
             </Pane>
          </children>

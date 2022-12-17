@@ -60,6 +60,9 @@ public class Controller implements Initializable {
     private Button btnSignin;
 
     @FXML
+    private Button btnSignup;
+
+    @FXML
     private Pane pnlCustomer;
 
     @FXML
@@ -71,8 +74,7 @@ public class Controller implements Initializable {
     @FXML
     private Pane pnlMenus;
 
-    @FXML
-    private Pane pnlSignout;
+
 
     private double x, y;
 
@@ -123,9 +125,8 @@ public class Controller implements Initializable {
             pnlOrders.setVisible(true);
         }
         if (actionEvent.getSource() == btnSignout) {
-            pnlSignout.setStyle("-fx-background-color : #02030A");
-            pnlSignout.toFront();
-            pnlSignout.setVisible(true);
+            Stage stage = (Stage) btnSignout.getScene().getWindow();
+            stage.close();
 
         }
         if (actionEvent.getSource() == btnSignin) {
@@ -168,8 +169,8 @@ public class Controller implements Initializable {
                 }
 
             }
-        }
-        /*void SignUpUserClick (MouseEvent event) throws IOException, URISyntaxException, InterruptedException {
+        }if (actionEvent.getSource() == btnSignup) {
+            void SignUpUserClick (MouseEvent event) throws IOException, URISyntaxException, InterruptedException {
             if (UsernameContent2.getText().equals("") || PasswordContent2.getText().equals("")
                     || (!TraineeSelect.isSelected() && !TrainerSelect.isSelected())) {
                 this.LabelSignUp.setText("Please fill in all the fields");
@@ -215,9 +216,8 @@ public class Controller implements Initializable {
                 alert.showAndWait();
             }
 
-            */
-        //-------
 
+        }
     }
 }
 
