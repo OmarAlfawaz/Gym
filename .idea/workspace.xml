@@ -1,76 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="689e5c2c-0f3d-4326-99ca-770da383b48e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/Acoount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Infograph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JavaFX.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gym.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Gym.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/libraries/JavaFX.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/runConfigurations/Main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/Gym.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Home.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Item.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Sign.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/Web_Banner__2_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Box_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Home_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Meanpath_64px_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Open_Envelope_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Person_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Search_52px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Sign_Out_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Slider__32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/icons8_Xbox_Menu_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/jimmy-fallon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/images/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/imgs/sc.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/imgs/sc2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/Home.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/Item.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/Login.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/home/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/Web_Banner__2_.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Box_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_GPS_Antenna_64px_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Home_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Meanpath_64px_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Open_Envelope_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Person_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Search_52px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Sign_Out_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Slider__32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/icons8_Xbox_Menu_32px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/images/jimmy-fallon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Gym/src/system/trainer.class" beforeDir="false" />
+    <list default="true" id="689e5c2c-0f3d-4326-99ca-770da383b48e" name="Changes" comment="final call plz help">
+      <change afterPath="$PROJECT_DIR$/src/home/HomeT.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Gym/home/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Gym/home/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Gym/home/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/Home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Item.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Item.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Signup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/progress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/trainee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/trainee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/system/trainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/system/trainer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -95,17 +34,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/saudabdulaziz/Documents/Gym/src/home",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/saudabdulaziz/Documents/Gym/src/home&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/home" />
@@ -144,6 +83,21 @@
       <option name="presentableId" value="Default" />
       <updated>1671305112918</updated>
     </task>
+    <task id="LOCAL؜-٠٠٠٠١" summary="final call plz help">
+      <created>1671313333261</created>
+      <option name="number" value="٠٠٠٠١" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٠١" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1671313333261</updated>
+    </task>
+    <task id="LOCAL؜-٠٠٠٠٢" summary="final call plz help">
+      <created>1671313387875</created>
+      <option name="number" value="٠٠٠٠٢" />
+      <option name="presentableId" value="LOCAL؜-٠٠٠٠٢" />
+      <option name="project" value="LOCAL؜" />
+      <updated>1671313387875</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,5 +110,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final call plz help" />
+    <option name="LAST_COMMIT_MESSAGE" value="final call plz help" />
   </component>
 </project>

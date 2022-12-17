@@ -26,7 +26,7 @@
          </VBox.margin>
          <Image url="@../images/jimmy-fallon.png" />
       </ImageView>
-      <Label fx:id="nameUp" text="OmOOO" textFill="#e7e5e5">
+      <Label fx:id="nameUp" text="Mjood" textFill="#e7e5e5">
          <VBox.margin>
             <Insets bottom="20.0" />
          </VBox.margin>
@@ -187,7 +187,7 @@
                                        <Image url="@../images/jimmy-fallon.png" />
                                     </image>
                                  </ImageView>
-                                 <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="149.0" text="Trainer name" textFill="#e7e5e5" />
+                                 <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="149.0" text="Jsoom" textFill="#e7e5e5" />
                                  <Button mnemonicParsing="false" prefHeight="10.0" prefWidth="60.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@/home/style.css" text="Chat" textFill="WHITE" />
                               </children>
                            </HBox>

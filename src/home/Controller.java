@@ -126,7 +126,7 @@ public class Controller implements Initializable {
     }
 
 
-    public void handleClicks(ActionEvent actionEvent) throws IOException, URISyntaxException, InterruptedException {
+    public void handleClicks(ActionEvent actionEvent) throws Exception {
         if (actionEvent.getSource() == btnCustomers) {
             pnlCustomer.setStyle("-fx-background-color : #02030A");
             pnlCustomer.toFront();
@@ -141,7 +141,7 @@ public class Controller implements Initializable {
             }
             Acoount.Signup(username2.getText(), PassWord2.getText(), to);
             Main main = new Main();
-            main.login();
+            main.start(new Stage());
         }
             if (actionEvent.getSource() == btnMenus) {
                 pnlMenus.setStyle("-fx-background-color : #02030A");
@@ -203,7 +203,7 @@ public class Controller implements Initializable {
 
                                 //After we close the stage we go to main
                                 Main main = new Main();
-                                main.login();
+                                main.Train();
                             }
                         } else {
                             LabelSignIn = new Label("Wrong name or password");

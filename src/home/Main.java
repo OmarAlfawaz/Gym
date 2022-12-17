@@ -77,6 +77,30 @@ public class Main extends Application {
         primaryStage.show();
         //
     }
+    public void Train () throws IOException {
+        //-----------
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("HomeT.fxml"));
+        primaryStage.setScene(new Scene(root));
+
+        //drag it here
+        root.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+
+        });
+
+
+        //set stage borderless
+        primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.show();
+        //
+    }
 
 
 
