@@ -106,9 +106,8 @@ This is an example of how to list things you need to use the software and how to
 - [ ] Add Server that can host the info
 - [ ] Add "Share" button to easily share stats 
 - [ ] Multi-language Support
-    - [x] Arabic
+    - [ ] Arabic
     - [ ] Spanish
-    - [ ] hindu
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -133,8 +132,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Saud Alhawas  - s202014840@kfupm.edu.sa
 
 Omar Alfawaz  - s202018400@kfupm.edu.sa
-
-Osamah Alomari - s202065500@kfupm.edu.sa 
 
 Project Link: [https://github.com/OmarAlfawaz/Gym](https://github.com/your_username/repo_name)
 

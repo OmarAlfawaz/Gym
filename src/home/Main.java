@@ -56,12 +56,24 @@ public class Main extends Application {
     public void Signup () throws IOException {
         //-----------
         Stage primaryStage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("Signup.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Sign.fxml"));
         primaryStage.setScene(new Scene(root));
+
+        //drag it here
+        root.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+
+        });
 
 
         //set stage borderless
-        //primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.initStyle(StageStyle.UNDECORATED);
         primaryStage.show();
         //
     }

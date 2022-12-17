@@ -22,10 +22,10 @@ public class session extends progress {
 
 
     public static void main(String[] args) {
-        session x=new session("Test",8,8,180,"chest");
+        session x=new session("Signup",8,8,180,"chest");
 
-        x.sessions.get("Test").setRips(6);// Example of changing info
-        x.showState("Test");
+        x.sessions.get("Signup").setRips(6);// Example of changing info
+        x.showState("Signup");
 
     }
 }

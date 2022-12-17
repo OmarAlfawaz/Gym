@@ -26,7 +26,7 @@
          </VBox.margin>
          <Image url="@../images/jimmy-fallon.png" />
       </ImageView>
-      <Label text="Omar" textFill="#e7e5e5">
+      <Label fx:id="nameUp" text="OmOOO" textFill="#e7e5e5">
          <VBox.margin>
             <Insets bottom="20.0" />
          </VBox.margin>
@@ -200,6 +200,15 @@
                                  <Font size="24.0" />
                               </font>
                            </Label>
+                           <HBox alignment="CENTER" prefHeight="169.0" prefWidth="293.0">
+                              <children>
+                                 <ImageView fitHeight="169.0" fitWidth="230.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                       <Image url="@../images/Infograph.png" />
+                                    </image>
+                                 </ImageView>
+                              </children>
+                           </HBox>
                         </children>
                         <opaqueInsets>
                            <Insets />
