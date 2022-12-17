@@ -11,7 +11,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
@@ -22,10 +21,10 @@ import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.*;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
+import java.net.HttpURLConnection;
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -35,6 +34,7 @@ public class Controller implements Initializable {
     public TextField passWord;
     public Label nameUp;
     public TextField username;
+    public Button btnSignup;
     @FXML
     private VBox pnItems;
     @FXML
@@ -62,9 +62,6 @@ public class Controller implements Initializable {
     private Button btnSignin;
 
     @FXML
-    private Button btnSignup;
-
-    @FXML
     private Pane pnlCustomer;
 
     @FXML
@@ -76,10 +73,11 @@ public class Controller implements Initializable {
     @FXML
     private Pane pnlMenus;
 
-
+    @FXML
+    private Pane pnlSignout;
 
     private double x, y;
-    Main main = new Main();
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -127,11 +125,13 @@ public class Controller implements Initializable {
             pnlOrders.setVisible(true);
         }
         if (actionEvent.getSource() == btnSignout) {
-            Stage stage = (Stage) btnSignout.getScene().getWindow();
-            stage.close();
+            pnlSignout.setStyle("-fx-background-color : #02030A");
+            pnlSignout.toFront();
+            pnlSignout.setVisible(true);
 
         }
         if (actionEvent.getSource() == btnSignin) {
+            try{
             Stage stage = (Stage) btnSignin.getScene().getWindow();
             //we will create a loop to check the API
             System.out.println(username.getText());
@@ -139,6 +139,7 @@ public class Controller implements Initializable {
                 //this.LabelSignIn.setText("Please fill in all the fields");
             } else {
                 String name = username.getText();
+                nameUp =new Label(name);
                 String password = passWord.getText();
                 String type = "";
                 String path = "https://us-central1-swe206-221.cloudfunctions.net/app/SignIn?teamKey=51135203&username="
@@ -153,73 +154,78 @@ public class Controller implements Initializable {
                 System.out.println(type);
                 if (status == 200) {
                     if (type.equals("trainee")) {
-                        Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
                         stage.close();
                         //After we close the stage we go to main
                         Main main = new Main();
                         main.login();
                     } else if (type.equals("trainer")) {
-                        Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
                         stage.close();
 
                         //After we close the stage we go to main
+                        Main main = new Main();
                         main.login();
                     }
                 } else {
                     // this.LabelSignIn.setText("Wrong name or password");
                 }
+            }
+
 
             }
-        }if (actionEvent.getSource() == btnSignup) {
-            main.Signup();
+            catch (IOException ex){
+
         }
-    }
-
-    /*void SignUpUserClick (MouseEvent event) throws IOException, URISyntaxException, InterruptedException {
-        if (UsernameContent2.getText().equals("") || PasswordContent2.getText().equals("")
-                || (!TraineeSelect.isSelected() && !TrainerSelect.isSelected())) {
-            this.LabelSignUp.setText("Please fill in all the fields");
-        } else {
-            String username = UsernameContent2.getText();
-            String password = PasswordContent2.getText();
-            String type = "";
-            if (TraineeSelect.isSelected()) {
-                type = "trainee";
-            } else if (TrainerSelect.isSelected()) {
-                type = "trainer";
-            }
-            var uri = new URI("https://us-central1-swe206-221.cloudfunctions.net/app/SignUp?teamKey=40495102");
-            var message = """
+            /*
+            if(actionEvent.getSource() == btnSignup ){
+            if (UsernameContent2.getText().equals("") || PasswordContent2.getText().equals("")
+                    || (!TraineeSelect.isSelected() && !TrainerSelect.isSelected())) {
+                this.LabelSignUp.setText("Please fill in all the fields");
+            } else {
+                String username = UsernameContent2.getText();
+                String password = PasswordContent2.getText();
+                String type = "";
+                if (TraineeSelect.isSelected()) {
+                    type = "trainee";
+                } else if (TrainerSelect.isSelected()) {
+                    type = "trainer";
+                }
+                var uri = new URI("https://us-central1-swe206-221.cloudfunctions.net/app/SignUp?teamKey=40495102");
+                var message = """
                         {
                             "username": "%s",
                             "password": "%s",
                             "type": "%s"}
                         """;
-            message = String.format(message, username, password, type);
+                message = String.format(message, username, password, type);
 
-            var client = HttpClient.newHttpClient();
-            var request = HttpRequest.newBuilder(uri).POST(HttpRequest.BodyPublishers.ofString(message))
-                    .header("Content-type", "application/json").build();
-            var response = client.send(request, HttpResponse.BodyHandlers.discarding());
-            if (response.statusCode() == 201) {
-                Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
-                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                scene = new Scene(root);
-                stage.setScene(scene);
-                stage.show();
-            } else {
-                this.LabelSignUp.setText("Username already exists");
+                var client = HttpClient.newHttpClient();
+                var request = HttpRequest.newBuilder(uri).POST(BodyPublishers.ofString(message))
+                        .header("Content-type", "application/json").build();
+                var response = client.send(request, BodyHandlers.discarding());
+                if (response.statusCode() == 201) {
+                    Parent root = FXMLLoader.load(getClass().getResource("Main Screen.fxml"));
+                    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
+                } else {
+                    this.LabelSignUp.setText("Username already exists");
+                }
             }
         }
-    }
 
 
-}
+            }
             else{
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setContentText("Invalid Username/passWord");
-                    alert.showAndWait();
-                    }*/
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setContentText("Invalid Username/passWord");
+                alert.showAndWait();
+            }
 
+            */
+        //-------
+
+    }
+}
 }
 
