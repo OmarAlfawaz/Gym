@@ -54,6 +54,18 @@ public class Main extends Application {
         primaryStage.show();
         //
     }
+    public void Signup () throws IOException {
+        //-----------
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("Signup.fxml"));
+        primaryStage.setScene(new Scene(root));
+
+
+        //set stage borderless
+        //primaryStage.initStyle(StageStyle.UNDECORATED);
+        primaryStage.show();
+        //
+    }
 
 
 
