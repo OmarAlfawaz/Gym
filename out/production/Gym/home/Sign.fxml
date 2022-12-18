@@ -30,7 +30,7 @@
                   </Label>
                   <Button fx:id="signUpCheck" layoutX="589.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="28.0" prefWidth="66.0" style="-fx-border-color: #2A73FF; -fx-border-radius: 20; -fx-background-color: transparent;" stylesheets="@/home/style.css" text="Sign up" textFill="WHITE" />
                   <Label fx:id="LabelSignIn" layoutX="405.0" layoutY="323.0" underline="true" />
-                  <Label fx:id="stat" layoutX="409.0" layoutY="393.0" text="Forget your pass?" textFill="WHITE" underline="true" />
+                  <Label fx:id="stat" layoutX="409.0" layoutY="393.0" text="Check the Agreement" textFill="WHITE" underline="true" />
                   <RadioButton fx:id="TraineeSelect" layoutX="412.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleClicks" text="Trainee" textFill="WHITE" />
                   <RadioButton fx:id="TrainerSelect" layoutX="579.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleClicks" text="Trainer" textFill="WHITE" />
                </children>
