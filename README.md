@@ -6,7 +6,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-Gym-App-by-Saud</h3>
+  <h3 align="center">Best-Gym-App-by-Saud&Omar</h3>
 </div>
 
 
